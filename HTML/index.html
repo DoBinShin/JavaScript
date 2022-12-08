@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    //const math = prompt("수학점수를 입력하세요"); // 입력값 90
+    //const eng = prompt("영어점수를 입력하세요"); // 입력값 80
+
+    //const result = (math + eng) / 2;
+
+    console.log(result); // 4540이 리턴 됨
+
+    // -- 이유 --
+
+    // prompt는 문자형으로 반환하기 때문에 (math + eng)는 9080이 됨
+    // 실제 계산식은 "9080" / 2 문자형과 숫자형 계산식으로 됨
+    // 문자형과 숫자형이 계산이 되는 이유는 나누기(/)는 숫자형으로 강제 형변환(자동 형변환) 되는 속성이 있음
+    const result = (math + eng) / 2; 
+  
+    // 때문에 명시적 형변환을 해주어야 함
+
+</script>
 <body>
     테스트 : TEST
     xxx
